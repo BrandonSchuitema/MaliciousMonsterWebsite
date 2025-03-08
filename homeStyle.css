@@ -1,0 +1,112 @@
+body{
+    background: linear-gradient(#4b4e50, #2c3e50);
+    
+    background-position: center;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 0;
+    background-attachment: fixed;
+}
+
+.titleText{
+    width: 90%;
+    height: 400px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.9));
+}
+
+*{
+    text-decoration: none;
+}
+.navbar{
+    background: black;
+    font-family: serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 5px solid yellow;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+button{
+    background-image: url(Images/DropDown.png);
+    background-size: 100%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 10px;
+    width: 90px;
+    border: 2px solid transparent;
+
+    transition: 0.3s;
+
+    font-weight: bold;
+    font-size: 17px;
+    font-family: serif;
+
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 0, 0.9));
+}
+button:hover{
+    border-radius:15px;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 0, 1));
+
+    transform: scale(1.2);
+    color: yellow;
+}
+
+.skull{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 50px;
+    color: yellow;
+
+    border: 2px solid yellow;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.9);
+
+    animation: spin 3s linear infinite alternate;
+}
+@keyframes spin{
+    from{
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+    }
+    to{
+        box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.9);
+        transform: rotate(360deg);
+    }
+}
+
+/*
+.spin{
+    background: url("Images/youtube_racheal_background_potato_v1.png");
+    background-size: cover;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid black;
+    animation: ani 3s linear infinite;
+    background-position: center;
+    margin: 0 auto;
+}
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
+*/
