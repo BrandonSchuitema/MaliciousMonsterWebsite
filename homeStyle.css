@@ -79,7 +79,7 @@ button:hover{
     padding: 5px;
     box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.9);
 
-    animation: spin 3s linear infinite alternate;
+    animation: spin 5s linear infinite alternate;
 }
 @keyframes spin{
     from{
@@ -91,22 +91,41 @@ button:hover{
     }
 }
 
-/*
-.spin{
-    background: url("Images/youtube_racheal_background_potato_v1.png");
-    background-size: cover;
-    overflow: hidden;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: 5px solid black;
-    animation: ani 3s linear infinite;
-    background-position: center;
-    margin: 0 auto;
+.mainText{
+    font-size: 20px;
+    font-family: serif;
+    color: yellow;
+    width: 50%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-@keyframes spin{
+
+.lineSkull{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 50px;
+    color: yellow;
+
+    border: 2px solid yellow;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.9);
+
+    position: relative;
+    animation: rollSpin 5s linear infinite alternate;
+}
+@keyframes rollSpin{
+    from{
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+        left: -30%;
+    }
     to{
+        box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.9);
         transform: rotate(360deg);
+        left: 30%;
     }
 }
-*/
