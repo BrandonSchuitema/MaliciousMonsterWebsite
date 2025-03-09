@@ -15,6 +15,7 @@ body{
 }
 .navbar{
     background: black;
+    text-align: center;
     font-family: serif;
     padding-right: 15px;
     padding-left: 15px;
